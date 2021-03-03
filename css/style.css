@@ -38,6 +38,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 *,
 *:before,
 *:after {
@@ -49,14 +50,49 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-  border-bottom: 1px solid teal;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px gray;
 }
 .tagline {
   margin-left: 15px;
-  color: #fb5353;
-  font-family: "Dancing Script", cursive;
+  color: teal;
+  font-family: "Permanent Marker", cursive;
   font-weight: 600;
+}
+.left {
+  height: 400px;
+  background-image: url("/images/3506330.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  margin-top: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 10px;
+
+  padding: 20px;
+  color: teal;
+}
+#txt {
+  text-decoration: none;
+}
+.contact {
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #ffb100;
+  color: white;
+  font-weight: large;
+  outline: none;
+  margin-top: 20px;
+  border: none;
 }
 .service-section {
   display: flex;
@@ -69,6 +105,80 @@ html {
   text-align: center;
   box-shadow: 0 0 10px teal;
 }
+
+.box {
+  position: relative;
+  transform: skew(-20deg);
+  padding: 10px;
+  color: teal;
+  text-align: center;
+  box-shadow: 0 0 10px gray;
+  margin: 60px 0;
+}
+.box2 {
+  position: absolute;
+  width: 10px;
+  transform: skew(-20deg);
+  padding: 10px;
+  background-color: teal;
+  transform: rotate(100deg);
+  text-align: center;
+}
+.box3 {
+  position: absolute;
+  width: 10px;
+  transform: skew(-20deg);
+  padding: 10px;
+  top: 0;
+  background-color: teal;
+  transform: rotate(100deg);
+  text-align: center;
+}
+.box4 {
+  position: absolute;
+  width: 10px;
+  transform: skew(-20deg);
+  padding: 10px;
+  right: 10px;
+  background-color: teal;
+  transform: rotate(100deg);
+  text-align: center;
+}
+
+.box5 {
+  position: absolute;
+  width: 10px;
+  transform: skew(-20deg);
+  padding: 10px;
+  right: 10px;
+  top: 0;
+  background-color: teal;
+  transform: rotate(100deg);
+  text-align: center;
+}
+.box6 {
+  position: absolute;
+  width: 10px;
+  transform: skew(-20deg);
+  padding: 10px;
+  right: 50%;
+  top: 0;
+  background-color: teal;
+  transform: rotate(100deg);
+  text-align: center;
+}
+.box7 {
+  position: absolute;
+  width: 10px;
+  transform: skew(-20deg);
+  padding: 10px;
+  right: 50%;
+  bottom: 0;
+  background-color: teal;
+  transform: rotate(100deg);
+  text-align: center;
+}
+
 .inner-menu {
   width: 1000px;
   max-width: 90%;
@@ -1035,4 +1145,37 @@ article[role="pge-title-content"].contact-header p a:hover {
 #back {
   font-size: large;
   text-decoration: none;
+}
+
+#i1 {
+  color: teal;
+}
+#i2 {
+  color: teal;
+}
+#i3 {
+  color: teal;
+}
+.right h1 {
+  font-size: 49px;
+}
+@media screen and (max-width: 550px) {
+  .tagline {
+    display: none;
+  }
+  .logo {
+    width: 50px;
+  }
+  .left {
+    height: 200px;
+  }
+  .right h1 {
+    font-size: 50px;
+  }
+  .right h4 {
+    font-size: 20px;
+  }
+  .contact {
+    padding: 20px 30px;
+  }
 }
