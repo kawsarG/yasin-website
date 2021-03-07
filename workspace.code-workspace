@@ -1,0 +1,22 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Desktop/conatct/css1"
+		},
+		{
+			"path": "../../Desktop/conatct/fonts1"
+		},
+		{
+			"path": "../../Desktop/conatct/images1"
+		},
+		{
+			"path": "../../Desktop/conatct/vendor"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "avana"
+    }
+}
